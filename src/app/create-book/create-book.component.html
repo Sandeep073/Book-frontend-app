@@ -1,0 +1,17 @@
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()" class="form">
+    <div class="form-group">
+      <label for="bookTitle">Book Title</label>
+      <input id="bookTitle" [(ngModel)]="book.title" name="bookTitle" required />
+    </div>
+    <div class="form-group">
+      <label for="bookAuthor">Book Author</label>
+      <input id="bookAuthor" [(ngModel)]="book.author" name="bookAuthor" required />
+    </div>
+    <div class="form-group">
+      <label for="bookGenre">Book Genre</label>
+      <input id="bookGenre" [(ngModel)]="book.genre" name="bookGenre" />
+    </div>
+    <button type="submit" class="submit-button">Save Book</button>
+  </form>
+</div>
